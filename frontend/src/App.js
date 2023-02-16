@@ -1,26 +1,26 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.<br></br>
-          Welcome here
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render()
+  {
+    return(
+      <body>
+      <div class = "container">
+        <div class="form-wrapper">
+          <input type="text" placeholder='Add task...' id='inputfield'></input>
+          <input type="submit" value="ADD" id='button'></input>
+        </div>        
+        <div class="list-wrapper">
+          list-display-1<br></br>
+          list-display-2<br></br>
+          list-display-3<br></br>
+          list-display-4
+        </div>        
+      </div>
+      </body>
+    )
+  }
 }
 
 export default App;
